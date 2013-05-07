@@ -1,0 +1,25 @@
+# Default is 8081
+port: 8081
+
+# The size of the executor thread pool (that can handle blocking back-end processing).
+executorThreadPoolSize: 200
+
+# The default service response format (default is JSON)
+defaultFormat: json
+
+# The base URL, used as a prefix for links returned in data
+# default is http://localhost:<port>
+baseUrl: http://localhost:8081
+
+#Configuration for the MetricsPlugin/Graphite
+metricsConfig:
+     isEnabled: true
+     machineName: mymachine
+     isGraphiteEnabled: false
+     graphiteHost: graphite.example.com
+     graphitePort: 2003
+     publishSeconds: 60
+     
+serviceClasses:
+   - com.strategicgains.restexpress.scaffold.minimal.controller.SampleControllerImpl
+
