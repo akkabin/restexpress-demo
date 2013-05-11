@@ -5,6 +5,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -68,5 +72,12 @@ public class SampleControllerImpl implements SampleController
 		//TODO: Your 'delete' logic here...
 		//String id = request.getHeader(Constants.Url.SAMPLE_ID, "No Sample ID supplied");
 		response.setResponseNoContent();
+	}
+
+
+
+	public String readAsString(Request request, Response response) {
+		// TODO Auto-generated method stub
+		return "I give you string only!!!";
 	}
 }

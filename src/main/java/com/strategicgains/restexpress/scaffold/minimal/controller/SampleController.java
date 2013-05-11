@@ -22,7 +22,6 @@ public interface SampleController
 
 	@Path("/your/route/here/{sampleId}.{format}")
 	@GET
-	@Produces("text/plain")
 	public Object read(Request request, Response response);
 	
 
@@ -39,5 +38,10 @@ public interface SampleController
 	@Path("/your/route/here/{sampleId}.{format}")
 	@DELETE
 	public void delete(Request request, Response response);
+	
+	@Path("/your/route/string/abc.{format}")
+	@GET
+	@Produces("text/plain")
+	public String readAsString(Request request, Response response);
 	
 }
