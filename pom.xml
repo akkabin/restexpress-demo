@@ -44,7 +44,7 @@
 			<version>0.1.2</version>
 		</dependency>
 		<dependency>
-			<groupId>com.strategicgains.archetype</groupId>
+			<groupId>com.strategicgains</groupId>
 			<artifactId>restexpress-loader</artifactId>
 			<version>0.1-SNAPSHOT</version>
 		</dependency>
