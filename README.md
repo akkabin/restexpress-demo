@@ -1,10 +1,8 @@
-A Minimal RestExpress Server
-============================
-A template RestExpress project that contains minimal external dependencies.
+restexpress-demo
+================
 
-To run the project:
-	mvn clean package exec:java
+Demo how to use restexpress-loader
 
-To create a project deployable assembly (zip file):
-	mvn clean package
-	mvn assembly:single
+To Run:
+java -jar restexpress-demo-0.1-SNAPSHOT.jar app.yml
+
