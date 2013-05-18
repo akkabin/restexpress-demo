@@ -18,6 +18,11 @@
 			<artifactId>restexpress-loader</artifactId>
 			<version>0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jcl</artifactId>
+			<version>1.7.5</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -39,7 +44,7 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<version>1.2.1</version>
 				<configuration>
-					<mainClass>com.strategicgains.restexpress.scaffold.minimal.Main</mainClass>
+					<mainClass>com.strategicgains.restexpress.loader.RestExpressLoader</mainClass>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -52,7 +57,7 @@
 						<manifest>
 							<addClasspath>true</addClasspath>
 							<classpathPrefix>./lib/</classpathPrefix>
-							<mainClass>com.strategicgains.restexpress.scaffold.minimal.Main</mainClass>
+							<mainClass>com.strategicgains.restexpress.loader.RestExpressLoader</mainClass>
 						</manifest>
 						<manifestEntries>
 							<Class-Path>./config/</Class-Path>
